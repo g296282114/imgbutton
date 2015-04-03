@@ -30,7 +30,6 @@ namespace imgbutton
         Boolean mon = false;
         Bitmap  _fimage;
         String _tiptxt = "";
-        int _bkc=0;
         Boolean _enbk = false;
 
 
@@ -53,19 +52,6 @@ namespace imgbutton
             }
         }
 
-        public int bkc
-        {
-            get
-            {
-                return _bkc;
-            }
-            set
-            {
-                _bkc = value;
-                Invalidate();
-
-            }
-        }
 
         public Bitmap fimage
         {
@@ -135,13 +121,11 @@ namespace imgbutton
             {
                 if (enbk)
                 {
-                    if (_bkc != 0)
-                    {
-                        e.Graphics.Clear(Color.FromArgb(_bkc, BackColor.R, BackColor.G, BackColor.B));
+
+                        e.Graphics.Clear(BackColor);
                         //SolidBrush br = new SolidBrush(Color.FromArgb(_bkc, BackColor.R, BackColor.G, BackColor.B));
                         //e.Graphics.FillRectangle(br, 0, 0, Width, Height);
-                        //br.Dispose();
-                    }
+
                 }
                  matrix = new ColorMatrix(tmatrix);
             }
