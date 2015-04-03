@@ -1,0 +1,8 @@
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\bin\Debug\imgbutton.dll
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\bin\Debug\imgbutton.pdb
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\obj\Debug\imgbutton.dll
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\obj\Debug\imgbutton.pdb
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\obj\Debug\imgbutton.UserControl1.resources
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\obj\Debug\GenerateResource.read.1.tlog
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\obj\Debug\GenerateResource.write.1.tlog

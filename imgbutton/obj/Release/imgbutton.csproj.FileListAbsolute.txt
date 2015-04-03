@@ -1,0 +1,22 @@
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\bin\Release\imgbutton.dll
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\bin\Release\imgbutton.pdb
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\obj\Release\ResolveAssemblyReference.cache
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\obj\Release\GenerateResource.read.1.tlog
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\obj\Release\GenerateResource.write.1.tlog
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\obj\Release\imgbutton.dll
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\obj\Release\imgbutton.pdb
+c:\documents and settings\administrator\my documents\visual studio 2010\Projects\imgbutton\imgbutton\obj\Release\imgbutton.cimgbutton.resources
+E:\new work\imgbutton\imgbutton\bin\Release\imgbutton.dll
+E:\new work\imgbutton\imgbutton\bin\Release\imgbutton.pdb
+E:\new work\imgbutton\imgbutton\obj\Release\ResolveAssemblyReference.cache
+E:\new work\imgbutton\imgbutton\obj\Release\imgbutton.cimgbutton.resources
+E:\new work\imgbutton\imgbutton\obj\Release\GenerateResource.read.1.tlog
+E:\new work\imgbutton\imgbutton\obj\Release\GenerateResource.write.1.tlog
+E:\new work\imgbutton\imgbutton\obj\Release\imgbutton.dll
+E:\new work\imgbutton\imgbutton\obj\Release\imgbutton.pdb
+D:\work\vs2010\imgbutton\imgbutton\bin\Release\imgbutton.dll
+D:\work\vs2010\imgbutton\imgbutton\bin\Release\imgbutton.pdb
+D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.cimgbutton.resources
+D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.csproj.GenerateResource.Cache
+D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.dll
+D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.pdb
