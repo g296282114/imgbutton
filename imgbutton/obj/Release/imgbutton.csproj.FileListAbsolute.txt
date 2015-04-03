@@ -20,4 +20,3 @@ D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.cimgbutton.resources
 D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.csproj.GenerateResource.Cache
 D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.dll
 D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.pdb
-D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.csprojResolveAssemblyReference.cache

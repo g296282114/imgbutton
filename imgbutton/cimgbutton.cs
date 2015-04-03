@@ -12,6 +12,7 @@ namespace imgbutton
 {
     public partial class cimgbutton : UserControl
     {
+        
         float[][] tmatrix = { 
                   new float[] {1,  0, 0,0,0},
                   new float[] {0,  1, 0, 0,0},
@@ -19,10 +20,10 @@ namespace imgbutton
                   new float[] {0, 0, 0, 1, 0},
                   new float[] {0, 0, 0, 0, 1}
         };
-        float[][] _bmatrix = { 
-                  new float[] {0.9F, 0, 0,0,0},
-                  new float[] {0, 0.9F,0, 0,0},
-                  new float[] {0,  0, 0.9F, 0,0},
+        float[][] bmatrix = { 
+                  new float[] {1, 0, 0,0,0},
+                  new float[] {0, 1,0, 0,0},
+                  new float[] {0,  0, 1, 0,0},
                   new float[] {0, 0, 0, 1, 0},
                   new float[] {0, 0, 0, 0,1}
         };
@@ -31,6 +32,10 @@ namespace imgbutton
         Bitmap  _fimage;
         String _tiptxt = "";
         Boolean _enbk = false;
+        float _matrixR = 0;
+        float _matrixG = 0;
+        float _matrixB = 0;
+
 
 
         public cimgbutton()
@@ -67,16 +72,43 @@ namespace imgbutton
             }
         }
 
-        public float[][] bmatrix
+        public float matrixR
         {
             get
             {
-                return _bmatrix;
+                return _matrixR;
             }
             set
             {
-                _bmatrix = value;
-                Invalidate();
+                _matrixR = value;
+                bmatrix[0][0] = value;
+            }
+        }
+
+        public float matrixG
+        {
+            get
+            {
+                return _matrixG;
+            }
+            set
+            {
+                _matrixG = value;
+                bmatrix[1][1] = value;
+
+            }
+        }
+
+        public float matrixB
+        {
+            get
+            {
+                return _matrixB;
+            }
+            set
+            {
+                _matrixB = value;
+                bmatrix[2][2] = value;
 
             }
         }
