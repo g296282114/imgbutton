@@ -32,9 +32,9 @@ namespace imgbutton
         Bitmap  _fimage;
         String _tiptxt = "";
         Boolean _enbk = false;
-        float _matrixR = 0;
-        float _matrixG = 0;
-        float _matrixB = 0;
+        float _matrixR = 1;
+        float _matrixG = 1;
+        float _matrixB = 1;
 
 
 
@@ -144,8 +144,6 @@ namespace imgbutton
         }
         private void UserControl1_Paint(object sender, PaintEventArgs e)
         {
-
-            
          
             if (_fimage == null) return;
             ColorMatrix matrix;
@@ -153,8 +151,10 @@ namespace imgbutton
             {
                 if (enbk)
                 {
-
-                        e.Graphics.Clear(BackColor);
+                    SolidBrush br = new SolidBrush(BackColor);
+                    e.Graphics.FillRectangle(br,0,0,Width,Height);
+                    br.Dispose();
+                        //e.Graphics.Clear(BackColor);
                         //SolidBrush br = new SolidBrush(Color.FromArgb(_bkc, BackColor.R, BackColor.G, BackColor.B));
                         //e.Graphics.FillRectangle(br, 0, 0, Width, Height);
 
