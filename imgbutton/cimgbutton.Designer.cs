@@ -32,12 +32,12 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
-            // cimgbutton
+            // CImgButton
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Name = "cimgbutton";
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Name = "CImgButton";
             this.Size = new System.Drawing.Size(50, 49);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.UserControl1_Paint);
             this.MouseLeave += new System.EventHandler(this.UserControl1_MouseLeave);

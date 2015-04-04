@@ -105,7 +105,7 @@ namespace imgbutton
             }
         }
 
-        public Boolean enmatrix
+        public Boolean matrixen
         {
             get
             {
