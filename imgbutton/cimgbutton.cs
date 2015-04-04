@@ -36,7 +36,7 @@ namespace imgbutton
         float _matrixR = 1;
         float _matrixG = 1;
         float _matrixB = 1;
-
+        Boolean _enmatrix = true;
 
 
         public CImgButton()
@@ -101,6 +101,19 @@ namespace imgbutton
             {
                 _matrixG = value;
                 bmatrix[1][1] = value;
+
+            }
+        }
+
+        public Boolean enmatrix
+        {
+            get
+            {
+                return _enmatrix;
+            }
+            set
+            {
+                _enmatrix = value;
 
             }
         }
@@ -181,6 +194,7 @@ namespace imgbutton
 
         private void UserControl1_MouseMove(object sender, MouseEventArgs e)
         {
+            if (!_enmatrix) return;
             if (mon != true)
             {
                 mon = true;
@@ -192,6 +206,7 @@ namespace imgbutton
 
         private void UserControl1_MouseLeave(object sender, EventArgs e)
         {
+            if (!_enmatrix) return;
             //pictureBox1.Visible = false;
             mon = false;
             repar();

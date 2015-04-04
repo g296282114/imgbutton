@@ -26,3 +26,4 @@ F:\My Files\web\imgbtn\imgbutton\obj\Release\imgbutton.csproj.GenerateResource.C
 F:\My Files\web\imgbtn\imgbutton\obj\Release\imgbutton.dll
 F:\My Files\web\imgbtn\imgbutton\obj\Release\imgbutton.pdb
 F:\My Files\web\imgbtn\imgbutton\obj\Release\imgbutton.cimgbutton.resources
+F:\My Files\web\imgbtn\imgbutton\obj\Release\imgbutton.csprojResolveAssemblyReference.cache
