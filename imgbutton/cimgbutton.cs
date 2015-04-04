@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
 
 namespace imgbutton
 {
-    public partial class cimgbutton : UserControl
+    public partial class CImgButton : UserControl
     {
         
         float[][] tmatrix = { 
@@ -31,28 +32,33 @@ namespace imgbutton
         Boolean mon = false;
         Bitmap  _fimage;
         String _tiptxt = "";
-        Boolean _enbk = false;
+        int _bkal = 0;
         float _matrixR = 1;
         float _matrixG = 1;
         float _matrixB = 1;
 
 
 
-        public cimgbutton()
+        public CImgButton()
         {
             InitializeComponent();
         }
 
-        public Boolean enbk
+        public void repar()
+        {
+            this.Parent.Invalidate(new Rectangle(Left, Top,Width,Height),true);
+        }
+
+        public int bkal
         {
             get
             {
-                return _enbk;
+                return _bkal;
             }
             set
             {
-                _enbk = value;
-                Invalidate();
+                _bkal = value;
+                repar();
 
             }
         }
@@ -67,7 +73,7 @@ namespace imgbutton
             set
             {
                 _fimage = value;
-                Invalidate();
+                repar();
 
             }
         }
@@ -124,7 +130,6 @@ namespace imgbutton
                 _tiptxt = value;
                 if(value != "")
                 toolTip1.SetToolTip(this,_tiptxt);
-                Invalidate();
 
             }
         }
@@ -146,18 +151,15 @@ namespace imgbutton
         {
          
             if (_fimage == null) return;
+            
             ColorMatrix matrix;
             if (mon)
             {
-                if (enbk)
+                if (_bkal>0)
                 {
-                    SolidBrush br = new SolidBrush(BackColor);
-                    e.Graphics.FillRectangle(br,0,0,Width,Height);
+                    SolidBrush br = new SolidBrush(Color.FromArgb(_bkal, BackColor));
+                    e.Graphics.FillRectangle(br, 0, 0, Width, Height);
                     br.Dispose();
-                        //e.Graphics.Clear(BackColor);
-                        //SolidBrush br = new SolidBrush(Color.FromArgb(_bkc, BackColor.R, BackColor.G, BackColor.B));
-                        //e.Graphics.FillRectangle(br, 0, 0, Width, Height);
-
                 }
                  matrix = new ColorMatrix(tmatrix);
             }
@@ -167,15 +169,8 @@ namespace imgbutton
             }
             
             ImageAttributes attributes = new ImageAttributes();
-            attributes.SetColorMatrix(matrix, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);
-            //g.DrawImage(srcImage, new Rectangle(0, 0, srcImage.Width, srcImage.Height), 0, 0, srcImage.Width, srcImage.Height, GraphicsUnit.Pixel, attributes);
-            //(Bitmap)Properties.Resources.ResourceManager.GetObject("btn" + ((int)tpc.Tag))
-
-
-
-
-            e.Graphics.DrawImage(_fimage, new Rectangle((Width - _fimage.Width) / 2, (Height - _fimage.Height) / 2, _fimage.Width, _fimage.Height), 0, 0, _fimage.Width, _fimage.Height, GraphicsUnit.Pixel, attributes);
-
+            attributes.SetColorMatrix(matrix, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);    
+            e.Graphics.DrawImage(_fimage, new Rectangle(0, 0, Width,Height), 0, 0, _fimage.Width, _fimage.Height, GraphicsUnit.Pixel, attributes);
 
 
             // e.Graphics.DrawString(_title, fo, so, new Rectangle(0, Height-20, Width, Height));
@@ -189,20 +184,18 @@ namespace imgbutton
             if (mon != true)
             {
                 mon = true;
-                Invalidate();
+                repar(); ;
+                //Invalidate();
             }
             
         }
 
         private void UserControl1_MouseLeave(object sender, EventArgs e)
         {
+            //pictureBox1.Visible = false;
             mon = false;
-            Invalidate();
+            repar();
+
         }
-
-     
-
-        
-
     }
 }

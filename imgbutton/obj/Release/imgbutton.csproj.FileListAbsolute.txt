@@ -20,3 +20,9 @@ D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.cimgbutton.resources
 D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.csproj.GenerateResource.Cache
 D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.dll
 D:\work\vs2010\imgbutton\imgbutton\obj\Release\imgbutton.pdb
+F:\My Files\web\imgbtn\imgbutton\bin\Release\imgbutton.dll
+F:\My Files\web\imgbtn\imgbutton\bin\Release\imgbutton.pdb
+F:\My Files\web\imgbtn\imgbutton\obj\Release\imgbutton.csproj.GenerateResource.Cache
+F:\My Files\web\imgbtn\imgbutton\obj\Release\imgbutton.dll
+F:\My Files\web\imgbtn\imgbutton\obj\Release\imgbutton.pdb
+F:\My Files\web\imgbtn\imgbutton\obj\Release\imgbutton.cimgbutton.resources

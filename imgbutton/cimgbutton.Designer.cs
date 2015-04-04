@@ -1,6 +1,6 @@
 ﻿namespace imgbutton
 {
-    partial class cimgbutton
+    partial class CImgButton
     {
         /// <summary>
         /// 必需的设计器变量。
