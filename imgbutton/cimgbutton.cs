@@ -58,7 +58,7 @@ namespace imgbutton
             set
             {
                 _bkal = value;
-                repar();
+                //repar();
 
             }
         }
@@ -73,7 +73,7 @@ namespace imgbutton
             set
             {
                 _fimage = value;
-                repar();
+               // repar();
 
             }
         }
